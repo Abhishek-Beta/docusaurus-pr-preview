@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Docusaurus Check 4 17:58 - 5min ⏱️
+            Docusaurus Check 5 18:11 - 5min ⏱️
           </Link>
         </div>
       </div>
