@@ -27,8 +27,6 @@ jobs:
         run: |
           echo "GITHUB_ACTIONS: $GITHUB_ACTIONS"
           echo "BASE_URL: $BASE_URL"
-        env:
-          BASE_URL: "/docusaurus-init"
 
       - name: Build website
         run: npm run build
