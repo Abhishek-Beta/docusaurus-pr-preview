@@ -135,7 +135,9 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus. github actions = ${
         process.env.GITHUB_ACTIONS
-      } | baseUrl = ${process.env.BASE_URL}`,
+      } | baseUrl = ${process.env.BASE_URL} | deployEnv = ${
+        process.env.DEPLOY_ENV
+      }`,
     },
     prism: {
       theme: prismThemes.github,
