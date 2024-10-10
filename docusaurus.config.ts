@@ -12,10 +12,9 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
 
-  baseUrl:
-    process.env.DEPLOY_ENV === "preview"
-      ? `${process.env.BASE_URL}/`
-      : "/docusaurus-pr-preview/",
+  baseUrl: process.env.GITHUB_ACTIONS
+    ? `${process.env.BASE_URL}/`
+    : "/docusaurus-pr-preview/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -135,9 +134,7 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus. github actions = ${
         process.env.GITHUB_ACTIONS
-      } | baseUrl = ${process.env.BASE_URL} | deployEnv = ${
-        process.env.DEPLOY_ENV
-      }`,
+      } | baseUrl = ${process.env.BASE_URL}`,
     },
     prism: {
       theme: prismThemes.github,
